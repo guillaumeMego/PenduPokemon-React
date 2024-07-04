@@ -8,7 +8,7 @@ function PokemonList({ onPokemonSelected }) {
   const [isButtonVisible, setIsButtonVisible] = useState(true);
 
   const handleButtonClick = async () => {
-    const response = await axios.get("https://pokebuildapi.fr/api/v1/pokemon/limit/151");
+    const response = await axios.get("https://pokebuildapi.fr/api/v1/pokemon/limit/1302");
     if (response.status === 200) {
       const kantoPokemon = response.data.map((pokemon) => {
         return {
